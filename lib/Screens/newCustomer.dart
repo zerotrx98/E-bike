@@ -6,35 +6,28 @@ class NewCustomer extends StatelessWidget {
   final CollectionReference store =
   FirebaseFirestore.instance.collection('services');
 
+  TextEditingController nameController = TextEditingController();
+  TextEditingController phoneNoController = TextEditingController();
+  TextEditingController vehicleModelController = TextEditingController();
+  TextEditingController placeController = TextEditingController();
+  TextEditingController registrationNoController = TextEditingController();
+  TextEditingController chasesNoController = TextEditingController();
+  TextEditingController motorNoController = TextEditingController();
+  TextEditingController controllerNoController = TextEditingController();
+
   void addsericves(){
     final data = {
-      'name': 'fasir',
-      'phoneNo':'9848336644',
-      'vehicle':'e-moto',
-      'place':'ponnani',
-      'registrationNo':'333',
-      'motorNo':'555',
-      'ControllerNo':'888',
-      'chasesNo':'444'
+      'name': 'nameController.text',
+      'phoneNo':'phoneNoController.text',
+      'vehicle':'vehicleModelController.text',
+      'place':'placeController.text',
+      'registrationNo':'registrationNoController.text',
+      'motorNo':'motorNoController.text',
+      'ControllerNo':'controllerNoController.text',
+      'chasesNo':'chasesNoController.text'
     };
     store.add(data);
   }
-  TextEditingController nameController = TextEditingController();
-  String fullName = '';
-  TextEditingController phoneNoController = TextEditingController();
-  String phoneNo = '';
-  TextEditingController vehicleModelController = TextEditingController();
-  String vehicleModel = '';
-  TextEditingController placeController = TextEditingController();
-  String place = '';
-  TextEditingController registrationNoController = TextEditingController();
-  String registrationNo = '';
-  TextEditingController chasesNoController = TextEditingController();
-  String chasesNo = '';
-  TextEditingController motorNoController = TextEditingController();
-  String motorNo = '';
-  TextEditingController controllerNoController = TextEditingController();
-  String controllerNo = '';
 
   @override
   Widget build(BuildContext context) {
