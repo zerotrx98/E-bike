@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../demo/homescreen.dart';
 import 'HomeScreen.dart';
 
 class firstScreen extends StatelessWidget {
@@ -7,8 +8,6 @@ class firstScreen extends StatelessWidget {
     return Scaffold(
       body: Center(
         child: Container(
-          width: 900,
-          height: 900,
           color: Colors.green[900],
           child: Center(
             child: Text(
@@ -23,7 +22,7 @@ class firstScreen extends StatelessWidget {
       ),
       floatingActionButton: FloatingActionButton.extended(
         onPressed: () {
-          Navigator.push(context, MaterialPageRoute(builder: (_)=> HomeScreen()));
+          Navigator.push(context, MaterialPageRoute(builder: (_)=> HomeScreen1()));
         },
         backgroundColor: Colors.white,
         foregroundColor: Colors.green[900],
