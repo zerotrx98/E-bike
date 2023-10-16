@@ -78,7 +78,7 @@ class Serv_detailScreen extends StatelessWidget {
                                                 children: [
 
                                                         Container(
-                                                    height: 700,
+                                                    height: 690,
                                                     decoration: BoxDecoration(
                                                       borderRadius: BorderRadius.circular(8),
                                                       color: Colors.white,
